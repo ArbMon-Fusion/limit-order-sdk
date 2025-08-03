@@ -1,6 +1,6 @@
 {
-  "name": "@1inch/limit-order-sdk",
-  "version": "5.0.4-rc.0",
+  "name": "@nikhil0341/limit-order-sdk",
+  "version": "5.0.4-rc.1",
   "description": "SDK for 1inch Limit Order Protocol",
   "author": "@1inch",
   "license": "MIT",
@@ -39,7 +39,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:1inch/limit-order-sdk.git"
+    "url": "ssh://git@github.com:ArbMon-Fusion/limit-order-sdk.git"
   },
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs && npm run build:types",

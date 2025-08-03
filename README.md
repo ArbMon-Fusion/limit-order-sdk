@@ -3,7 +3,7 @@
 ## Installation
 
 ```shell
-npm install '@1inch/limit-order-sdk'
+npm install '@nikhil0341/limit-order-sdk'
 ```
 
 ## Docs
@@ -14,7 +14,7 @@ npm install '@1inch/limit-order-sdk'
 
 ### Order creation
 ```typescript
-import {LimitOrder, MakerTraits, Address, Sdk, randBigInt, FetchProviderConnector} from "@1inch/limit-order-sdk"
+import {LimitOrder, MakerTraits, Address, Sdk, randBigInt, FetchProviderConnector} from "@nikhil0341/limit-order-sdk"
 import {Wallet} from 'ethers'
 
 // it is a well-known test private key, do not use it in production
@@ -61,8 +61,8 @@ await sdk.submitOrder(order, signature)
 Mainly used by market makers
 
 ```typescript
-import {RfqOrder, Address, randBigInt} from "@1inch/limit-order-sdk"
-import {UINT_40_MAX} from "@1inch/byte-utils"
+import {RfqOrder, Address, randBigInt} from "@nikhil0341/limit-order-sdk"
+import {UINT_40_MAX} from "@nikhil0341/byte-utils"
 import {Wallet} from 'ethers'
 
 // it is a well-known test private key, do not use it in production
@@ -97,7 +97,7 @@ const signature = await maker.signTypedData(
 ### API
 
 ```typescript
-import {Api, FetchProviderConnector, LimitOrder, HttpProviderConnector} from '@1inch/limit-order-sdk'
+import {Api, FetchProviderConnector, LimitOrder, HttpProviderConnector} from '@nikhil0341/limit-order-sdk'
 
 const networkId = 1 // ethereum
 const api = new Api({
@@ -124,8 +124,8 @@ const orders = await api.getOrdersByMaker(order.maker)
 `axios` package should be installed
 
 ```typescript
-import {Api, LimitOrder} from "@1inch/limit-order-sdk"
-import {AxiosProviderConnector} from '@1inch/limit-order-sdk/axios'
+import {Api, LimitOrder} from "@nikhil0341/limit-order-sdk"
+import {AxiosProviderConnector} from '@nikhil0341/limit-order-sdk/axios'
 
 const api = new Api({
     networkId: 1, // ethereum
